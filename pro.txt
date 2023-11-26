@@ -1,0 +1,52 @@
+
+create table Product_Category(
+cat_id int,
+cat_nm varchar(50));
+
+create table Product_master(
+prod_id int,
+prod_nm varchar(50),
+cat_id int,
+rate int,
+gender varchar(50),
+size int,
+stock int,
+photo varchar(50));
+
+
+create table Customer(
+cust_id int,
+cust_nm varchar(50),
+cust_addr varchar(50),
+cust_pincode int,
+cust_phone int,
+cust_email varchar(50),
+cust_pass varchar(50));
+
+create table Sale_master(
+sale_id int,
+sale_date varchar(50),
+cust_id int,
+gst float,
+grandtotal int);
+
+
+create table Sale_details(
+sale_det_id int,
+sale_id int,
+prod_id int,
+rate int,
+qty int,
+amt int);
+
+
+create table Payment(
+pay_id int,
+pay_date varchar(50),
+sale_id int,
+pay_amt int);
+
+
+
+
+
