@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78C231BE-55D6-42A9-A083-193B038E0088}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>saisamarthsportscenter</RootNamespace>
+    <AssemblyName>saisamarthsportscenter</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\windows\assembly\GAC_MSIL\CrystalDecisions.Web\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Adminlogin.aspx" />
+    <Content Include="Customer.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="niture\about.html" />
+    <Content Include="niture\blog.html" />
+    <Content Include="niture\contact.html" />
+    <Content Include="niture\css\animate.min.css" />
+    <Content Include="niture\css\bootstrap.min.css" />
+    <Content Include="niture\css\jquery-ui.css" />
+    <Content Include="niture\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="niture\css\meanmenu.css" />
+    <Content Include="niture\css\nice-select.css" />
+    <Content Include="niture\css\normalize.css" />
+    <Content Include="niture\css\owl.carousel.min.css" />
+    <Content Include="niture\css\responsive.css" />
+    <Content Include="niture\css\slick.css" />
+    <Content Include="niture\css\style.css" />
+    <Content Include="niture\icon\1.png" />
+    <Content Include="niture\icon\2.png" />
+    <Content Include="niture\icon\3.png" />
+    <Content Include="niture\icon\4.png" />
+    <Content Include="niture\icon\p1.png" />
+    <Content Include="niture\icon\p2.png" />
+    <Content Include="niture\icon\p3.png" />
+    <Content Include="niture\icon\p4.png" />
+    <Content Include="niture\icon\tw.png" />
+    <Content Include="niture\images\1.jpg" />
+    <Content Include="niture\images\2.jpg" />
+    <Content Include="niture\images\3.jpg" />
+    <Content Include="niture\images\Avangarda_klu.jpg" />
+    <Content Include="niture\images\badminton.jpg" />
+    <Content Include="niture\images\badminton1.jpg" />
+    <Content Include="niture\images\bg.jpg" />
+    <Content Include="niture\images\blog.jpg" />
+    <Content Include="niture\images\blol.jpg" />
+    <Content Include="niture\images\cosco.jpg" />
+    <Content Include="niture\images\discount.jpg" />
+    <Content Include="niture\images\equipment.png" />
+    <Content Include="niture\images\football.jpg" />
+    <Content Include="niture\images\lllll.png" />
+    <Content Include="niture\images\loading.gif" />
+    <Content Include="niture\images\logo.jpg" />
+    <Content Include="niture\images\logo1.jpg" />
+    <Content Include="niture\images\Main.jpg" />
+    <Content Include="niture\images\maps-and-flags.png" />
+    <Content Include="niture\images\menu_icon.png" />
+    <Content Include="niture\images\nivia.jpg" />
+    <Content Include="niture\images\puma.jpg" />
+    <Content Include="niture\images\sega.jpg" />
+    <Content Include="niture\images\Shoes.jpg" />
+    <Content Include="niture\images\shoes.png" />
+    <Content Include="niture\images\sportswear.jpg" />
+    <Content Include="niture\images\spp.jpg" />
+    <Content Include="niture\index.html" />
+    <Content Include="niture\js\bootstrap.bundle.min.js" />
+    <Content Include="niture\js\custom.js" />
+    <Content Include="niture\js\jquery-3.0.0.min.js" />
+    <Content Include="niture\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="niture\js\jquery.min.js" />
+    <Content Include="niture\js\jquery.validate.js" />
+    <Content Include="niture\js\popper.min.js" />
+    <Content Include="niture\product.html" />
+    <Content Include="niture\product_detail3.html" />
+    <Content Include="Payment.aspx" />
+    <Content Include="Product_Category.aspx" />
+    <Content Include="Product_master.aspx" />
+    <Content Include="Report\frm_Categorywiseproductmaster.aspx" />
+    <Content Include="Report\frm_Customer.aspx" />
+    <Content Include="Report\frm_CustomerwiseSaleMaster.aspx" />
+    <Content Include="Report\frm_DateWise_Payment.aspx" />
+    <Content Include="Report\frm_DateWise_SaleMaster.aspx" />
+    <Content Include="Report\frm_invoice.aspx" />
+    <Content Include="Report\frm_Payment.aspx" />
+    <Content Include="Report\frm_ProductCategory.aspx" />
+    <Content Include="Report\frm_ProductwiseSaleDetails.aspx" />
+    <Content Include="Report\frm_Product_Master.aspx" />
+    <Content Include="Report\frm_Salewisepayment.aspx" />
+    <Content Include="Report\frm_SalewiseSaleDetails.aspx" />
+    <Content Include="Report\frm_Sale_details.aspx" />
+    <Content Include="Report\frm_Sale_Master.aspx" />
+    <Content Include="Sale_details.aspx" />
+    <Content Include="Sale_master.aspx" />
+    <Content Include="Sample\about.html" />
+    <Content Include="Sample\blog.html" />
+    <Content Include="Sample\contact.html" />
+    <Content Include="Sample\css\animate.min.css" />
+    <Content Include="Sample\css\bootstrap.min.css" />
+    <Content Include="Sample\css\jquery-ui.css" />
+    <Content Include="Sample\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Sample\css\meanmenu.css" />
+    <Content Include="Sample\css\nice-select.css" />
+    <Content Include="Sample\css\normalize.css" />
+    <Content Include="Sample\css\owl.carousel.min.css" />
+    <Content Include="Sample\css\responsive.css" />
+    <Content Include="Sample\css\slick.css" />
+    <Content Include="Sample\css\style.css" />
+    <Content Include="Sample\icon\1.png" />
+    <Content Include="Sample\icon\2.png" />
+    <Content Include="Sample\icon\3.png" />
+    <Content Include="Sample\icon\4.png" />
+    <Content Include="Sample\icon\p1.png" />
+    <Content Include="Sample\icon\p2.png" />
+    <Content Include="Sample\icon\p3.png" />
+    <Content Include="Sample\icon\p4.png" />
+    <Content Include="Sample\icon\tw.png" />
+    <Content Include="Sample\images\1.jpg" />
+    <Content Include="Sample\images\2.jpg" />
+    <Content Include="Sample\images\3.jpg" />
+    <Content Include="Sample\images\Avangarda_klu.jpg" />
+    <Content Include="Sample\images\bg.jpg" />
+    <Content Include="Sample\images\blog.jpg" />
+    <Content Include="Sample\images\blol.jpg" />
+    <Content Include="Sample\images\discount.jpg" />
+    <Content Include="Sample\images\lllll.png" />
+    <Content Include="Sample\images\loading.gif" />
+    <Content Include="Sample\images\logo.jpg" />
+    <Content Include="Sample\images\logo1.jpg" />
+    <Content Include="Sample\images\maps-and-flags.png" />
+    <Content Include="Sample\images\menu_icon.png" />
+    <Content Include="Sample\index.html" />
+    <Content Include="Sample\js\bootstrap.bundle.min.js" />
+    <Content Include="Sample\js\custom.js" />
+    <Content Include="Sample\js\jquery-3.0.0.min.js" />
+    <Content Include="Sample\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Sample\js\jquery.min.js" />
+    <Content Include="Sample\js\jquery.validate.js" />
+    <Content Include="Sample\js\popper.min.js" />
+    <Content Include="Sample\product.html" />
+    <Content Include="Sample\product_detail3.html" />
+    <Content Include="Search\CancleCartItem.aspx" />
+    <Content Include="Search\CustDashboard.aspx" />
+    <Content Include="Search\CustomerLogin.aspx" />
+    <Content Include="Search\Searchbycat.aspx" />
+    <Content Include="Search\SearchDetails.aspx" />
+    <Content Include="Search\SearchProduct.aspx" />
+    <Content Include="Search\Showcart.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adminlogin.aspx.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlogin.aspx.designer.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalDecisions\Web.cs" />
+    <Compile Include="Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Category.aspx.cs">
+      <DependentUpon>Product_Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product_Category.aspx.designer.cs">
+      <DependentUpon>Product_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product_master.aspx.cs">
+      <DependentUpon>Product_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product_master.aspx.designer.cs">
+      <DependentUpon>Product_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\frm_Categorywiseproductmaster.aspx.cs">
+      <DependentUpon>frm_Categorywiseproductmaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Categorywiseproductmaster.aspx.designer.cs">
+      <DependentUpon>frm_Categorywiseproductmaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Customer.aspx.cs">
+      <DependentUpon>frm_Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Customer.aspx.designer.cs">
+      <DependentUpon>frm_Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_CustomerwiseSaleMaster.aspx.cs">
+      <DependentUpon>frm_CustomerwiseSaleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_CustomerwiseSaleMaster.aspx.designer.cs">
+      <DependentUpon>frm_CustomerwiseSaleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_DateWise_Payment.aspx.cs">
+      <DependentUpon>frm_DateWise_Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_DateWise_Payment.aspx.designer.cs">
+      <DependentUpon>frm_DateWise_Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_DateWise_SaleMaster.aspx.cs">
+      <DependentUpon>frm_DateWise_SaleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_DateWise_SaleMaster.aspx.designer.cs">
+      <DependentUpon>frm_DateWise_SaleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_invoice.aspx.cs">
+      <DependentUpon>frm_invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_invoice.aspx.designer.cs">
+      <DependentUpon>frm_invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Payment.aspx.cs">
+      <DependentUpon>frm_Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Payment.aspx.designer.cs">
+      <DependentUpon>frm_Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_ProductCategory.aspx.cs">
+      <DependentUpon>frm_ProductCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_ProductCategory.aspx.designer.cs">
+      <DependentUpon>frm_ProductCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_ProductwiseSaleDetails.aspx.cs">
+      <DependentUpon>frm_ProductwiseSaleDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_ProductwiseSaleDetails.aspx.designer.cs">
+      <DependentUpon>frm_ProductwiseSaleDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Product_Master.aspx.cs">
+      <DependentUpon>frm_Product_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Product_Master.aspx.designer.cs">
+      <DependentUpon>frm_Product_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Salewisepayment.aspx.cs">
+      <DependentUpon>frm_Salewisepayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Salewisepayment.aspx.designer.cs">
+      <DependentUpon>frm_Salewisepayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_SalewiseSaleDetails.aspx.cs">
+      <DependentUpon>frm_SalewiseSaleDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_SalewiseSaleDetails.aspx.designer.cs">
+      <DependentUpon>frm_SalewiseSaleDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Sale_details.aspx.cs">
+      <DependentUpon>frm_Sale_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Sale_details.aspx.designer.cs">
+      <DependentUpon>frm_Sale_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Sale_Master.aspx.cs">
+      <DependentUpon>frm_Sale_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Sale_Master.aspx.designer.cs">
+      <DependentUpon>frm_Sale_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_Customer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Customer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_invoices.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_invoices.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Payment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Payment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Product_Category1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Product_Category.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Product_Master.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Product_Master.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Sale_details.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Sale_details.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Sale_Master.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Sale_Master.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sale_details.aspx.cs">
+      <DependentUpon>Sale_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sale_details.aspx.designer.cs">
+      <DependentUpon>Sale_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sale_master.aspx.cs">
+      <DependentUpon>Sale_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sale_master.aspx.designer.cs">
+      <DependentUpon>Sale_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\CancleCartItem.aspx.cs">
+      <DependentUpon>CancleCartItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\CancleCartItem.aspx.designer.cs">
+      <DependentUpon>CancleCartItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\CustDashboard.aspx.cs">
+      <DependentUpon>CustDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\CustDashboard.aspx.designer.cs">
+      <DependentUpon>CustDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\CustomerLogin.aspx.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\CustomerLogin.aspx.designer.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Searchbycat.aspx.cs">
+      <DependentUpon>Searchbycat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Searchbycat.aspx.designer.cs">
+      <DependentUpon>Searchbycat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\SearchDetails.aspx.cs">
+      <DependentUpon>SearchDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\SearchDetails.aspx.designer.cs">
+      <DependentUpon>SearchDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\SearchProduct.aspx.cs">
+      <DependentUpon>SearchProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\SearchProduct.aspx.designer.cs">
+      <DependentUpon>SearchProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Showcart.aspx.cs">
+      <DependentUpon>Showcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Showcart.aspx.designer.cs">
+      <DependentUpon>Showcart.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\rpt_Customer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Customer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_invoices.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_invoices.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_Payment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Payment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_Product_Category.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Product_Category1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_Product_Master.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Product_Master.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_Sale_details.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Sale_details.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_Sale_Master.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Sale_Master.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Upload\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52669</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
